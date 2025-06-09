@@ -21,8 +21,6 @@ public class PlayerHealth : MonoBehaviour
     public TextMeshProUGUI feedbackText;
     public bool isRespawningFromCheckpoint = false;
 
-    public GameObject gameOverUI;
-
     public GameObject collectableItem;
     public Transform dropPosition;
 
@@ -38,10 +36,6 @@ public class PlayerHealth : MonoBehaviour
         if (feedbackText != null)
         {
             feedbackText.gameObject.SetActive(false);
-        }
-        if (gameOverUI != null)
-        {
-            gameOverUI.SetActive(false);
         }
     }
     private void DropCollectable(Vector3 dropPosition)
@@ -80,8 +74,7 @@ public class PlayerHealth : MonoBehaviour
     }
     public void GameOver()
     {
-        Time.timeScale = 0f;
-        gameOverUI.SetActive(true);
+        SceneManager.LoadScene("GameOver", LoadSceneMode.Single);
     }
     public void AddHealth(int healthAmount)
     {
