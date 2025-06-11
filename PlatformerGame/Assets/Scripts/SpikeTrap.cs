@@ -11,30 +11,35 @@ public class SpikeTrap : MonoBehaviour
 
     private bool isPlayerInTrigger = false;
     private bool isMovingUp = true;
+    private Coroutine spikeCoroutine;
 
-    private void Update()
-    {
-        if (isPlayerInTrigger)
-        {
-            StartCoroutine(MoveSpikes());
-        }
-    }
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
             isPlayerInTrigger = true;
+            if (spikeCoroutine == null)
+            {
+                spikeCoroutine = StartCoroutine(MoveSpikes());
+            }
         }
     }
+
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
             isPlayerInTrigger = false;
-            StopAllCoroutines();
+            if (spikeCoroutine != null)
+            {
+                StopCoroutine(spikeCoroutine);
+                spikeCoroutine = null;
+            }
             spikes.position = new Vector3(spikes.position.x, downPosition, spikes.position.z);
+            isMovingUp = true;
         }
     }
+
     private IEnumerator MoveSpikes()
     {
         while (isPlayerInTrigger)
@@ -50,5 +55,6 @@ public class SpikeTrap : MonoBehaviour
             isMovingUp = !isMovingUp;
             yield return new WaitForSeconds(5);
         }
+        spikeCoroutine = null;
     }
 }

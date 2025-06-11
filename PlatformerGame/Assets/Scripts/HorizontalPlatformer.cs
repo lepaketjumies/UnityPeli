@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class HorizontalPlatformer : MonoBehaviour{
-    [SerializeField] private float moveSpeed = 2f;
     [SerializeField] private float moveDistance = 5f;
-
+    [SerializeField] private float moveSpeed = 2f;
     private Vector3 startPosition;
     private bool movingRight = true;
 
@@ -18,14 +17,11 @@ public class HorizontalPlatformer : MonoBehaviour{
     void MovePlatform(){
         if(movingRight){
             transform.position += Vector3.right * moveSpeed * Time.deltaTime;
-
             if(transform.position.x >= startPosition.x + moveDistance){
                 movingRight = false;
             }
-        }
-        else{
-            transform.position += Vector3.left * moveSpeed * Time.deltaTime;
-
+        } else {
+            transform.position -= Vector3.right * moveSpeed * Time.deltaTime;
             if(transform.position.x <= startPosition.x - moveDistance){
                 movingRight = true;
             }

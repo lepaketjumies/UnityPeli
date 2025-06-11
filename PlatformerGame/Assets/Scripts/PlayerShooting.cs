@@ -11,7 +11,7 @@ public class PlayerShooting : MonoBehaviour {
 
     private int ammoCount = 0;
     public TextMeshProUGUI ammoText;
-    public int ammoAmount = 7;
+    public int maxAmmo = 7;
 
     void Start(){
         ammoText.text = "Ammo: " + ammoCount;
@@ -22,8 +22,8 @@ public class PlayerShooting : MonoBehaviour {
             Shoot();
         }
     }
-    public void AddAmmo(int amount){
-        ammoCount += amount;
+    public void AddAmmo(){
+        ammoCount = maxAmmo;
         UpdateAmmoText();
     }
     public void UpdateAmmoText(){
@@ -31,7 +31,7 @@ public class PlayerShooting : MonoBehaviour {
     }
     void OnTriggerEnter2D(Collider2D other){
         if(other.CompareTag("Ammo")){
-            AddAmmo(ammoAmount);
+            AddAmmo();
             Destroy(other.gameObject);
         }
     }

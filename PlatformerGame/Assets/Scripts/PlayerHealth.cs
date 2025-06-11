@@ -175,6 +175,9 @@ public class PlayerHealth : MonoBehaviour
             case "Deathzone":
                 DeathZone();
                 break;
+            case "Spikes":
+                LoseLife();
+                break;
         }
     }
     private IEnumerator ShowCheckpointFeedbackDelayed()

@@ -11,7 +11,9 @@ TagManager:
   - Ammo
   - Checkpoint
   - EnemyBullet
-  - Spike
+  - Spikes
+  - Ladder
+  - Obstacle
   layers:
   - Default
   - TransparentFX

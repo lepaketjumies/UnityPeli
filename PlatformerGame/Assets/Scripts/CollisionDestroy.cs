@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CollisionDestroy : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D collision){
-        if(collision.gameObject.CompareTag("Spike")){
+        if(collision.gameObject.CompareTag("Spikes")){
             Destroy(collision.gameObject);
         }
     }

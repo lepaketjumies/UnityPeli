@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: fa12f67315151f84fa63428787080a5d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5332111117557467621
+    second: CowBoyParts rmbg_0
+  - first:
+      213: -2642538283406644495
+    second: CowBoyParts rmbg_1
+  - first:
+      213: -8934136464329493983
+    second: CowBoyParts rmbg_2
+  - first:
+      213: 6496070418790510933
+    second: CowBoyParts rmbg_3
+  - first:
+      213: -1461247137189734829
+    second: CowBoyParts rmbg_4
+  - first:
+      213: -5631547301791129263
+    second: CowBoyParts rmbg_5
+  - first:
+      213: -5914746220908978161
+    second: CowBoyParts rmbg_6
+  - first:
+      213: -4891889812174904986
+    second: CowBoyParts rmbg_7
+  - first:
+      213: -8382292648398964012
+    second: CowBoyParts rmbg_8
+  - first:
+      213: -2261849400370422461
+    second: CowBoyParts rmbg_9
+  - first:
+      213: -5637193505660307194
+    second: CowBoyParts rmbg_10
+  - first:
+      213: 2407938389314778883
+    second: CowBoyParts rmbg_11
+  - first:
+      213: 2486128620142072826
+    second: CowBoyParts rmbg_12
+  - first:
+      213: 3541242092353474727
+    second: CowBoyParts rmbg_13
+  - first:
+      213: 2041111341481649436
+    second: CowBoyParts rmbg_14
+  - first:
+      213: 4630273007180025969
+    second: CowBoyParts rmbg_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CowBoyParts rmbg_0
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 391
+        width: 58
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e98ce88fc67ff940800000000000000
+      internalID: 5332111117557467621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CowBoyParts rmbg_1
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 271
+        width: 273
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fa2d289e61d35bd0800000000000000
+      internalID: -2642538283406644495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CowBoyParts rmbg_2
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 401
+        width: 46
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 122b6c48832930480800000000000000
+      internalID: -8934136464329493983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CowBoyParts rmbg_3
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 346
+        width: 41
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5517ee3d0ada62a50800000000000000
+      internalID: 6496070418790510933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CowBoyParts rmbg_4
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 357
+        width: 42
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 356dfb2887b98bbe0800000000000000
+      internalID: -1461247137189734829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CowBoyParts rmbg_5
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 258
+        width: 68
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1512ee4f099b8d1b0800000000000000
+      internalID: -5631547301791129263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CowBoyParts rmbg_6
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 266
+        width: 81
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f00e22656a99aeda0800000000000000
+      internalID: -5914746220908978161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CowBoyParts rmbg_7
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 157
+        width: 36
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66166f852248c1cb0800000000000000
+      internalID: -4891889812174904986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CowBoyParts rmbg_8
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 124
+        width: 176
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dabfc06f3d1cab80800000000000000
+      internalID: -8382292648398964012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CowBoyParts rmbg_9
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 154
+        width: 95
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34d9d7344fb4c90e0800000000000000
+      internalID: -2261849400370422461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CowBoyParts rmbg_10
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 181
+        width: 29
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6097afcaf5aa4c1b0800000000000000
+      internalID: -5637193505660307194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CowBoyParts rmbg_11
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 86
+        width: 41
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30732201537ba6120800000000000000
+      internalID: 2407938389314778883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CowBoyParts rmbg_12
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 111
+        width: 35
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af31085dec0808220800000000000000
+      internalID: 2486128620142072826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CowBoyParts rmbg_13
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 14
+        width: 45
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a0d362bbe4052130800000000000000
+      internalID: 3541242092353474727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CowBoyParts rmbg_14
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 12
+        width: 114
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c15e80863fb735c10800000000000000
+      internalID: 2041111341481649436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CowBoyParts rmbg_15
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 34
+        width: 36
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1709b0e84c8024040800000000000000
+      internalID: 4630273007180025969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      CowBoyParts rmbg_0: 5332111117557467621
+      CowBoyParts rmbg_1: -2642538283406644495
+      CowBoyParts rmbg_10: -5637193505660307194
+      CowBoyParts rmbg_11: 2407938389314778883
+      CowBoyParts rmbg_12: 2486128620142072826
+      CowBoyParts rmbg_13: 3541242092353474727
+      CowBoyParts rmbg_14: 2041111341481649436
+      CowBoyParts rmbg_15: 4630273007180025969
+      CowBoyParts rmbg_2: -8934136464329493983
+      CowBoyParts rmbg_3: 6496070418790510933
+      CowBoyParts rmbg_4: -1461247137189734829
+      CowBoyParts rmbg_5: -5631547301791129263
+      CowBoyParts rmbg_6: -5914746220908978161
+      CowBoyParts rmbg_7: -4891889812174904986
+      CowBoyParts rmbg_8: -8382292648398964012
+      CowBoyParts rmbg_9: -2261849400370422461
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

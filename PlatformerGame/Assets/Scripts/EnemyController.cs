@@ -51,11 +51,11 @@ public class EnemyController : MonoBehaviour{
         localScale.x *= -1;
         transform.localScale = localScale;
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.collider.CompareTag("Player"))
         {
-            PlayerHealth playerHealth = collision.GetComponent<PlayerHealth>();
+            PlayerHealth playerHealth = collision.collider.GetComponent<PlayerHealth>();
             if (playerHealth != null)
             {
                 // Check if player is above enemy
@@ -70,6 +70,18 @@ public class EnemyController : MonoBehaviour{
                     playerHealth.LoseLife();
                 }
             }
+        }
+        else if (collision.collider.CompareTag("Bullet"))
+        {
+            PlayerHealth playerHealth = collision.collider.GetComponent<PlayerHealth>();
+            Destroy(collision.gameObject);
+            Destroy(gameObject);
+            playerHealth.HandleEnemyDeath();
+        }
+        else if (collision.collider.CompareTag("Obstacle"))
+        {
+            movingRight = !movingRight;
+            Flip();
         }
     }
 }

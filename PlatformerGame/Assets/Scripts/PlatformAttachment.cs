@@ -15,7 +15,9 @@ public class PlatformAttachment : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            Vector3 playerWorldPos = collision.transform.position;
             collision.transform.SetParent(null);
+            collision.transform.position = playerWorldPos;
         }
     }
 }

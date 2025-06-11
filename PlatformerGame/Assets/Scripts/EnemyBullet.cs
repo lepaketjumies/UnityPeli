@@ -4,12 +4,31 @@ using UnityEngine;
 
 public class EnemyBullet : MonoBehaviour
 {
+    [SerializeField] private GameObject projectile;
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Destroy(gameObject);
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            PlayerHealth playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
+            if (playerHealth != null)
+            {
+                playerHealth.LoseLife();
+                Destroy(projectile);
+            }
+        }
+        else if (collision.gameObject.CompareTag("Ground"))
+        {
+            Destroy(projectile);
+        }
+        else
+        {
+            WaitBeforeDestroy();
+        }
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    IEnumerator WaitBeforeDestroy()
     {
-        Destroy(gameObject);
+        yield return new WaitForSeconds(1f);
+        Destroy(projectile);
     }
 }
