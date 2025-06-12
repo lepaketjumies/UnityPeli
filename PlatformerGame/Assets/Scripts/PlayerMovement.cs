@@ -14,10 +14,12 @@ public class PlayerMovement : MonoBehaviour{
     private bool facingRight = true;
     private int jumpCount = 0;
     private bool isGrounded = false;
+    private Animator anim;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
 
         normalMoveSpeed = moveSpeed;
         defaultJumpForce = jumpForce;
@@ -28,15 +30,31 @@ public class PlayerMovement : MonoBehaviour{
         moveSpeed = normalMoveSpeed;
         jumpForce = defaultJumpForce;
     }
-    void Update(){
+    void Update()
+    {
         MovePlayer();
         Jump();
         FlipSprite();
+        anim.SetBool("running", rb.linearVelocity.x != 0);
+        anim.SetBool("grounded", isGrounded);
     }
-    void MovePlayer(){
-        rb.linearVelocity = new Vector2(Input.GetAxis("Horizontal") * moveSpeed, rb.linearVelocity.y);
+    void MovePlayer()
+    {
+        //rb.linearVelocity = new Vector2(Input.GetAxis("Horizontal") * moveSpeed, rb.linearVelocity.y);
+        float moveX = Input.GetAxis("Horizontal");
+        rb.linearVelocity = new Vector2(moveX * moveSpeed, rb.linearVelocity.y);
+
+        if (moveX != 0)
+        {
+            anim.SetBool("running", true);
+        }
+        else
+        {
+            anim.SetBool("running", false);
+        }
     }
-    void Jump(){
+    void Jump()
+    {
         if ((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) && jumpCount < maxJumps)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
