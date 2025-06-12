@@ -21,11 +21,13 @@ public class PauseMenu : MonoBehaviour{
         openButton.onClick.AddListener(OpenImage);
         closeButton.onClick.AddListener(CloseImage);
     }
-    void OpenImage(){
+    void OpenImage()
+    {
         pauseMenu.SetActive(true);
         Time.timeScale = 0.0f;
     }
-    void CloseImage(){
+    void CloseImage()
+    {
         pauseMenu.SetActive(false);
         Time.timeScale = 1.0f;
     }

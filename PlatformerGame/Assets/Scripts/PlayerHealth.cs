@@ -152,14 +152,6 @@ public class PlayerHealth : MonoBehaviour
                 StartCoroutine(ShowCheckpointFeedbackDelayed());
                 break;
 
-            case "Enemy":
-                float yOffset = 0.2f;
-                if (transform.position.y <= collision.transform.position.y + yOffset)
-                {
-                    LoseLife();
-                }
-                break;
-
             case "EnemyBullet":
                 LoseLife();
                 break;

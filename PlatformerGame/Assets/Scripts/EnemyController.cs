@@ -58,8 +58,7 @@ public class EnemyController : MonoBehaviour{
             PlayerHealth playerHealth = collision.collider.GetComponent<PlayerHealth>();
             if (playerHealth != null)
             {
-                // Check if player is above enemy
-                float yOffset = 0.2f;
+                float yOffset = 0.5f;
                 if (collision.transform.position.y > transform.position.y + yOffset)
                 {
                     playerHealth.HandleEnemyDeath();
